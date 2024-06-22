@@ -1,2 +1,2 @@
-# BigSeedWeb
-BigSeedWeb
+zip 파일안에 모든 파일 다 들러있습니다.
+시작은 login.jsp로 시작해주시면 감사하겠습니다.
