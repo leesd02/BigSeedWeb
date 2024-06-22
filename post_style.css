@@ -1,0 +1,94 @@
+/* 전체 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bigseedlogo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* 헤더 스타일 */
+.header {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    color: #ffffff;
+    padding-left: 5px;
+    margin: 0;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav a:hover {
+    color: #45a049;
+}
+
+/* 게시물 작성 폼 스타일 */
+.content-wrapper {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: rgba(242, 247, 180, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.post-form .form-group {
+    margin-bottom: 20px;
+}
+
+.post-form .form-control {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #19740d;
+    border-radius: 5px;
+}
+
+.post-form textarea.form-control {
+    height: 150px;
+}
+
+.post-form .btn {
+    background-color: #1f2937;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-form .btn:hover {
+    background-color: #45a049;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 20px 40px;
+    }
+}

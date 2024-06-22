@@ -1,0 +1,139 @@
+/* 전체 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bigseedlogo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* 헤더 스타일 */
+.header {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav a:hover {
+    color: #45a049;
+}
+
+/* 게시물 스타일 */
+.post-container {
+    background-color: rgba(242, 247, 180, 0.8);
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.post-container h2 {
+    color: #1f2937;
+}
+
+.post-container p {
+    color: #333;
+}
+
+.post-container a {
+    color: #1f2937;
+    text-decoration: none;
+}
+
+.post-container a:hover {
+    color: #45a049;
+}
+
+/* 댓글 스타일 */
+.comment-container {
+    background-color: rgba(242, 247, 180, 0.8);
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.comment-container h3 {
+    color: #1f2937;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.comment h4 {
+    color: #1f2937;
+    margin-top: 0;
+}
+
+.comment p {
+    color: #333;
+    margin-bottom: 0;
+}
+
+.comment a {
+    color: #1f2937;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.comment a:hover {
+    color: #45a049;
+}
+
+.comment-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+  }
+  
+  .comment-link:hover {
+    background-color: #0056b3;
+  }
+  
+
+/* 반응형 스타일 */
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 20px 40px;
+    }
+}

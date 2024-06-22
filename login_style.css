@@ -1,0 +1,99 @@
+/* 전체 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bigseedlogo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  
+  /* 로그인 컨테이너 */
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(242, 247, 180, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 타이틀 */
+  h1 {
+    color: #1f2937;
+    margin-bottom: 30px;
+  }
+  
+  /* 폼 스타일 */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  
+  
+  /* 링크 스타일 */
+  a {
+    color: #1f2937;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  a:hover {
+    color: #45a049;
+  }
+  
+  /* 반응형 스타일 */
+  @media (max-width: 767px) {
+    .login-container {
+      padding: 20px;
+    }
+  
+    form {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .login-container {
+      padding: 40px;
+    }
+  
+    form {
+      width: 80%;
+    }
+  }
+  
